@@ -28,7 +28,7 @@ class NumberOf1:
             return nbin.count('1')
         n = abs(n)
         nbin = bin(n-1)
-        return 32 - nbin.count('1') # 利用负数的绝对值等于正数的绝对值减1
+        return 32 - nbin.count('1') # 利用原码取反码加一与原码加一取反码相等
 
     # Method4
     def method4(self, n)：
