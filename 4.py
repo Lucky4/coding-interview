@@ -15,7 +15,7 @@ class FindGreatestSumOfSubArray:
 
     def method2(self, array):
         '''
-        对于一个数A，若是A的左边累计数非负，那么加上A能使得值不小于A，认为累计值对
+        联机算法，对于一个数A，若是A的左边累计数非负，那么加上A能使得值不小于A，认为累计值对
         整体和是有贡献的。如果前几项累计值负数，则认为有害于总和，total记录当前值。
         '''
         curr_sum = 0
