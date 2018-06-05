@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-
-
 class SumSolution(object):
     def method1(self, n):
 	f = lambda x, y : x + y

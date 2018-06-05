@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
-
-
-class FindGreatestSumOfSubArray:
+class FindGreatestSumOfSubArray(object):
     def method1(self, array):
         max_sum = array[0]
         array_length = len(array)

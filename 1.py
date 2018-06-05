@@ -2,7 +2,7 @@
 from ctypes import *
 
 
-class NumberOf1:
+class NumberOf1(object):
     # Method1
     def method1(self, n):
         count = 0
