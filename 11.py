@@ -39,7 +39,7 @@ class Solution:
 #
 #    while a % b != 0:
 #        tmp = a % b
-#	a = b
-#	b = tmp
+#        a = b
+#        b = tmp
 #
 #    return b
