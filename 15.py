@@ -17,6 +17,7 @@ class Find:
         
         return False
 
+    # 折半查找
     def method2(self, target, array):
         for i in array:
             low = 0
