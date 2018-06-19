@@ -34,3 +34,5 @@ class Solution:
 # 本题实际上就是约瑟夫环问题,记住公式:
 #                  0         , n = 1
 # f(n, m)= [f(n-1, m)+m] % n , n > 1
+#
+# 参考: http://zhedahht.blog.163.com/blog/static/2541117420072250322938/
