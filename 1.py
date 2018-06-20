@@ -24,14 +24,14 @@ class NumberOf1(object):
     # Method3
     def method3(self, n):
         if n >= 0:
-            nbin = bin(num)
+            nbin = bin(n)
             return nbin.count('1')
         n = abs(n)
         nbin = bin(n-1)
         return 32 - nbin.count('1') # 利用原码取反码加一与原码加一取反码相等
 
     # Method4
-    def method4(self, n)：
+    def method4(self, n):
         nbin = bin(n & 0xffffffff)
         return nbin.count('1')
 
