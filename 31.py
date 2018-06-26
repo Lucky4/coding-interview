@@ -6,7 +6,8 @@ class Solution(object):
 
     def helper(self, x, y, threshold, rows, cols, flag):
         if x < 0 or x >= rows or y < 0 or y >= cols or + \
-            self.numSum(x) + self.numSum(y) > threshold or flag[x][y]: return 0
+            self.numSum(x) + self.numSum(y) > threshold or flag[x][y]:
+            return 0
 
         flag[x][y] = True
 
