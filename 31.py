@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 class Solution(object):
     def movingCount(self, threshold, rows, cols):
-        flag = [[False for i in range(cols)] for i in range(rows)] # 这里注意
+        flag = map(lambda cols: [False for i in range(cols)], [cols] * rows) # 这里注意
         return self.helper(0, 0, threshold, rows, cols, flag)
 
     def helper(self, x, y, threshold, rows, cols, flag):
@@ -23,4 +23,4 @@ class Solution(object):
         return sum
 
 
-# *注意Python中如何创建多维数组*
+# *注意Python中如何创建二维数组*
