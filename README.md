@@ -37,3 +37,4 @@
 |32|[(回溯)矩阵中的路径](https://www.nowcoder.com/practice/c61c6999eecb4b8f88a98f66b273a3cc?tpId=13&tqId=11218&tPage=3&rp=3&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking) | [Python](./32.py)
 |33|[(回溯)八皇后问题]() | [Python](./33.py)
 |34|[(回溯)全排列问题](https://www.nowcoder.com/practice/fe6b651b66ae47d7acce78ffdd9a96c7?tpId=13&tqId=11180&tPage=4&rp=4&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking) | [Python](./34.py)
+|35|[集合子集]() | [Python](./35.py)
