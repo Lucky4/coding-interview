@@ -39,3 +39,4 @@
 |34|[(回溯)全排列问题](https://www.nowcoder.com/practice/fe6b651b66ae47d7acce78ffdd9a96c7?tpId=13&tqId=11180&tPage=4&rp=4&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking) | [Python](./34.py)
 |35|[集合子集]() | [Python](./35.py)
 |36|[组合问题]() | [Python](./36.py)
+|37|[(动态规划)挖金矿问题](https://zhuanlan.zhihu.com/p/31628866) | [Python](./37.py)
