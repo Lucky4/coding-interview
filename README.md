@@ -40,3 +40,4 @@
 |35|[集合子集]() | [Python](./35.py)
 |36|[组合问题]() | [Python](./36.py)
 |37|[(动态规划)挖金矿问题](https://zhuanlan.zhihu.com/p/31628866) | [Python](./37.py)
+|38|[(动态规划)矩阵的最小路径和](https://leetcode.com/problems/minimum-path-sum/description/) | [Python](./38.py)
