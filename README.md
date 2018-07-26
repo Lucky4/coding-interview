@@ -42,3 +42,4 @@
 |37|[(动态规划)挖金矿问题](https://zhuanlan.zhihu.com/p/31628866) | [Python](./37.py)
 |38|[(动态规划)矩阵的最小路径和](https://leetcode.com/problems/minimum-path-sum/description/) | [Python](./38.py)
 |39|[(动态规划)数组区间](https://leetcode.com/problems/range-sum-query-immutable/description/) | [Python](./39.py)
+|40|[(动态规划)分割整数](https://leetcode.com/problems/integer-break/description/) | [Python](./40.py)
