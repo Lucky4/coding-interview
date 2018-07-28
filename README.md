@@ -43,3 +43,4 @@
 |38|[(动态规划)矩阵的最小路径和](https://leetcode.com/problems/minimum-path-sum/description/) | [Python](./38.py)
 |39|[(动态规划)数组区间](https://leetcode.com/problems/range-sum-query-immutable/description/) | [Python](./39.py)
 |40|[(动态规划)分割整数](https://leetcode.com/problems/integer-break/description/) | [Python](./40.py)
+|41|[(动态规划)最长递增子序列](https://leetcode.com/problems/longest-increasing-subsequence/description/) | [Python](./41.py)
