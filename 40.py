@@ -26,3 +26,4 @@ class Solution(object):
 # 可以看出：
 # 当n小于4的时候，最大值等于（n分解的数）的成积。如数字3。
 # 当n大于等于4的时候，最大值等于（n分解的数的状态）和（n分解的数）的成积的最大值。如数字7。
+参考：https://github.com/CyC2018/Interview-Notebook/blob/master/notes/Leetcode%20%E9%A2%98%E8%A7%A3.md#%E5%88%86%E5%89%B2%E6%95%B4%E6%95%B0
