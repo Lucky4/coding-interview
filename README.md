@@ -45,3 +45,4 @@
 |40|[(动态规划)分割整数](https://leetcode.com/problems/integer-break/description/) | [Python](./40.py)
 |41|[(动态规划)最长递增子序列](https://leetcode.com/problems/longest-increasing-subsequence/description/) | [Python](./41.py)
 |42|[(动态规划)最长公共子序列](https://www.nowcoder.com/questionTerminal/c996bbb77dd447d681ec6907ccfb488a) | [Python](./42.py)
+|43|[(动态规划)股票交易](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/) | [Python](./43.py)
