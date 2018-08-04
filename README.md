@@ -47,3 +47,5 @@
 |42|[(动态规划)最长公共子序列](https://www.nowcoder.com/questionTerminal/c996bbb77dd447d681ec6907ccfb488a) | [Python](./42.py)
 |43|[(动态规划)股票交易](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/) | [Python](./43.py)
 |44|[(动态规划)字符串编辑](https://leetcode.com/problems/delete-operation-for-two-strings/description/) | [Python](./44.py)
+|45|[(链表)两个链表的第一个公共节点](https://www.nowcoder.com/practice/6ab1d9a29e88450685099d45c9e31e46?tpId=13&tqId=11189&tPage=1&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking) | [Python](./45.py)
+|46|[(链表)链表中环的入口节点](https://www.nowcoder.com/practice/253d2c59ec3e4bc68da16833f79a38e4?tpId=13&tqId=11208&tPage=1&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking) | [Python](./46.py)
