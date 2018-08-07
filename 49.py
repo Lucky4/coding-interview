@@ -26,7 +26,7 @@ class Solution:
         clone_head = pHead.next
         curr = pHead
         tmp = None
-        while curr.next:
+        while curr.next: # 这里为什么去判断curr.next而不是去判断curr呢，因为下面会使用到tmp.next，最后curr指向了最后元素，tmp指向了None。
             tmp = curr.next
             curr.next = tmp.next
             curr = tmp

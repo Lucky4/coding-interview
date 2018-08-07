@@ -43,8 +43,8 @@ class Solution:
 
 #         last = None
 #         while pHead:
-#             tmp = pHead.next
-#             pHead.next = last
-#             last = pHead
-#             pHead = tmp
+#             tmp = pHead
+#             pHead = pHead.next
+#             tmp.next = last
+#             last = tmp
 #         return last

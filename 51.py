@@ -19,14 +19,14 @@ class Solution:
             if p_curr.val == p_curr.next.val:
                 pre_val = p_curr.val
                 p_curr = p_curr.next.next
+                if not p_curr:
+                    break
             else:
                 tmp = p_curr.next
                 p_curr.next = None
                 p_distinct_curr.next = p_curr
                 p_distinct_curr = p_distinct_curr.next
                 p_curr = tmp
-            if not p_curr:
-                break
                 
         if p_curr and not p_curr.val == pre_val:
             p_distinct_curr.next = p_curr
