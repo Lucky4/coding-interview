@@ -12,6 +12,6 @@ public:
 
     int subtract(int num1, int num2)
     {
-    	return Add(num1, Add(~b, 1));
+    	return Add(num1, Add(~num2, 1));
     }
 };
