@@ -4,12 +4,12 @@ class Solution:
     def Permutation(self, ss):
         if len(ss) == 0:
             return []
-
+        
         ss_list = list(ss)
         res_list = []
         self.Helper(ss_list, 0, res_list)
-        res_list.sort()
         
+        res_list.sort()
         return res_list
         
     def Helper(self, ss_list, i, res_list):
@@ -32,7 +32,7 @@ class Solution:
 # 疑问1：swap(self, res_list, i, j)函数如果写成swap(self, i, j)这种形式，为什么没有起到交换作用？
 # 答：因为swap()函数中i，j都是形参，函数内为参数赋予新值不会改变外部任何变量，其中的运行机制相当于，swap()函数获得主函数实参的拷贝。
 # 
-# 解法2：使用Python内置的itertools.Permutations排列方法，要记住itertools中常用的方法。
+# 解法2：使用Python内置的itertools.permutations排列方法，要记住itertools中常用的方法。
 # import itertools
 # class Solution:
 #     def Permutation(self, ss):
