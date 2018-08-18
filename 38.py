@@ -4,24 +4,23 @@ class Solution(object):
         :type grid: List[List[int]]
         :rtype: int
         """
-	if not grid:
-            return 0
+        rows = len(grid)
+        cols = len(grid[0])
+        dp = [0] * cols
 
-        num_rows = len(grid)
-        num_cols = len(grid[0])
-        state = [0] * num_cols
-        for i in range(num_rows):
-            for j in range(num_cols):
-                if j == 0:
-                    state[j] = state[j] + grid[i][j]
-                elif i == 0:
-		    if j == 0:
-		        state[j] = grid[i][j]
-	            else:
-                        state[j] = state[j-1] + grid[i][j]
+        for i in range(rows):
+            for j in range(cols):
+                if i == 0:
+                    if j == 0:
+                        dp[j] = grid[i][j]
+                    else:
+                        dp[j] = grid[i][j] + dp[j-1]
+                elif j == 0:
+                    dp[j] = grid[i][j] + dp[j]
                 else:
-                    state[j] = min(state[j-1], state[j]) + grid[i][j]
-        return state[num_cols-1]
+                    dp[j] = grid[i][j] + min(dp[j-1], dp[j])
+        
+        return dp[cols-1]
 
 
 思路参考：https://blog.csdn.net/YF_Li123/article/details/71418015
