@@ -11,7 +11,7 @@ class Solution(object):
         common_node = None
 
         for i in range(min_iter_times):
-            if path1[i] == path2[i]:
+            if path1[i].val == path2[i].val:
                 common_node = path1[i]
 
         return common_node
