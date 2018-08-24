@@ -24,16 +24,7 @@ class Solution:
     def isEven(self, number):
         return not number & 1
 
-    # 冒泡思想,写在这里主要是熟悉下冒泡操作.
-    # def reOrderArray(self, array):
-    #     for i in range(0, len(array) - 1):
-    #         for j in range(0, len(array) - i - 1):
-    #             if array[j] & 1 == 0 and array[j + 1] & 1 == 1:
-    #                 array[j] = array[j] ^ array[j + 1]
-    #                 array[j + 1] = array[j] ^ array[j + 1]
-    #                 array[j] = array[j] ^ array[j + 1]
-    #     return array
-
+#这个题要重做
 
 
 # 1. 学习判断偶数的高效写法.
