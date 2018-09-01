@@ -60,4 +60,4 @@
 |55|[(二叉树)求二叉树中两个节点距离]() | [Python](./55.py)
 |56|[(动态规划)找硬币问题](https://leetcode.com/problems/coin-change/description/) | [Python](./56.py)
 |57|[(归并排序)两个有序数组中位数](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) | [Python](./58.py)
-|58|[(减治)数字zhuan字母](https://www.nowcoder.com/questionTerminal/10f8dead06874eec8b85ed2ed99a2712) | [Python](./58.py)
+|58|[(减治)数字转字母](https://www.nowcoder.com/questionTerminal/10f8dead06874eec8b85ed2ed99a2712) | [Python](./58.py)
