@@ -1,25 +1,41 @@
-# -*- coding: utf-8 -*-
-
-
 class Solution(object):
-    def func(self, s):
-        if len(s) == 1:
-            return 1
+    def findMedianSortedArrays(self, nums1, nums2):
+        nums1_length = len(nums1)
+        nums2_length = len(nums2)
 
-        if len(s) == 2:
-            if int(s) <= 26:
-                return 2
-            return 1
+        is_odd = False
+        if (nums1_length + nums2_length) % 2 != 0:
+            is_odd = True
 
-        return self.func(s[1:]) + (self.func(s[0:2])-1) * self.func(s[2:])
+        median_num = (nums1_length + nums2_length) / 2 + 1
 
+        tmp_arr = []
+        num1_index = 0
+        num2_index = 0
+        while num1_index < nums1_length and num2_index < nums2_length:
+            if nums1[num1_index] <= nums2[num2_index]:
+                tmp_arr.append(nums1[num1_index])
+                num1_index += 1
+            else:
+                tmp_arr.append(nums2[num2_index])
+                num2_index += 1
+            
+            if len(tmp_arr) == median_num:
+                break
 
-print Solution().func('12258')
+        if len(tmp_arr) < median_num:
+            while num1_index < nums1_length:
+                tmp_arr.append(nums1[num1_index])
+                num1_index += 1
+                if len(tmp_arr) == median_num:
+                    break
 
-# self.func(s[0:2])-1    这里为什么要减一呢？
-#
-# 因为减治法分为前后两部分，self.func(s[1:])这里已经包括前面是1个数的部分，所以要减一。
-#
-# if int(s) <= 26: return 2    这里为什么要返回2呢，不返回1呢？
-#
-# 因为要右边为两个字符的时候
+            while num2_index < nums2_length:
+                tmp_arr.append(nums2[num2_index])
+                num2_index += 1
+                if len(tmp_arr) == median_num:
+                    break
+
+        if is_odd:
+            return tmp_arr[len(tmp_arr) - 1]
+        return (tmp_arr[len(tmp_arr) - 1] + tmp_arr[len(tmp_arr) - 2]) / 2.0
