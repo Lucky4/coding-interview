@@ -22,8 +22,10 @@ class Solution:
             return None
         
         self.helper(pCurr.left, pPre)
+        
         pCurr.left = pPre[0]
         if pPre[0] != None:
             pPre[0].right = pCurr
         pPre[0] = pCurr
+        
         self.helper(pCurr.right, pPre)
