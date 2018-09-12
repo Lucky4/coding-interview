@@ -64,5 +64,5 @@
 |59|[(二分查找)旋转数组中的查找](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/) | [Python](./59.py)
 |60|[(二分查找)贪吃的小Q](https://www.nowcoder.com/profile/6845873/codeBookDetail?submissionId=33518175) | [Python](./60.py)
 |61|[(二叉树)二叉搜索树与双向链表](https://www.nowcoder.com/practice/947f6eb80d944a84850b0538bf0ec3a5?tpId=13&tqId=11179&tPage=2&rp=2&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking) | [Python](./61.py)
-|62|[(二叉树)二叉树种和为某一值的路径](https://www.nowcoder.com/practice/b736e784e3e34731af99065031301bca?tpId=13&tqId=11177&tPage=3&rp=3&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking) | [Python](./62.py)
+|62|[(二叉树)二叉树中和为某一值的路径](https://www.nowcoder.com/practice/b736e784e3e34731af99065031301bca?tpId=13&tqId=11177&tPage=3&rp=3&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking) | [Python](./62.py)
 |63|[(二叉树)二叉搜索树的第k个节点](https://www.nowcoder.com/practice/ef068f602dde4d28aab2b210e859150a?tpId=13&tqId=11215&tPage=3&rp=3&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking) | [Python](./63.py)
