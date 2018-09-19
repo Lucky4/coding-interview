@@ -11,10 +11,8 @@ class LRUCache(object):
     def get(self, key):
         if key not in self.cache_value_list:
             return -1
-
         self.cache_link_list.remove(key)
         self.cache_link_list.appendleft(key)
-
         return self.cache_value_list[key]
 
     def put(self, key, value):
