@@ -3,32 +3,13 @@ from __future__ import division
 
 
 class Solution:
-    # method1
     def Power(self, base, exponent):
-	is_minus = False
 	if base == 0:
 	    return False
         if exponent == 0:
 	    return 1
-        if exponent < 0:
-	    is_minus = True
-	    exponent = abs(exponent)
 
-        res = 1
-	for i in range(exponent):
-	    res *= base
-
-	if is_minus:
-	    return 1 / res
-        return res
-
-    # method2
-    def Power2(self, base, exponent):
-	is_minus = False
-	if base == 0:
-	    return False
-        if exponent == 0:
-	    return 1
+        is_minus = False
         if exponent < 0:
 	    is_minus = True
 	    exponent = abs(exponent)
@@ -45,8 +26,7 @@ class Solution:
 	    res = 1 / res
 	return res
 
-    # method3
-    def Power3(self, base, exponent):
+    def Power2(self, base, exponent):
         is_minus = False
         if base == 0:
             return False
