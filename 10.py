@@ -17,17 +17,3 @@ class Solution:
         for j in range(0, len(s)):
             if exist_letters[s[j]] == 1:
                 return j
-
-# 一种优雅的写法, 记住list的count()方法。
-#
-# import sys
-#     
-# while True:
-#     try:
-#         line=sys.stdin.next().strip()
-#         for i in line:
-#             if line.count(i)==1:
-#                 print i
-#                 break
-#     except:
-#        break
