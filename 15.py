@@ -25,7 +25,7 @@ class Find:
 		
             while low <= high:
                 mid = (low + high) / 2
-		if i[mid] < target:
+                if i[mid] < target:
                     low = mid + 1
 	        elif i[mid] > target:
 		    high = mid - 1
