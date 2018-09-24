@@ -40,13 +40,12 @@ class Solution:
             exponent = abs(exponent)
 
         if exponent == 1: # 这部是处理奇数偶数的关键，运行到这里就返回了，没有继续执行下面的操作。
-	    return base
+            return base
 
         res = self.Power3(base, exponent >> 1)
-	
-	res *= res
-	if exponent & 1 == 1:
-	    res *= base
+        res *= res
+        if exponent & 1 == 1:
+            res *= base
 
         if is_minus:
             return 1 / res
