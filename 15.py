@@ -21,8 +21,9 @@ class Find:
     def method2(self, target, array):
         for i in array:
             low = 0
-	    high = len(i) - 1
-	    while low <= high:
+            high = len(i) - 1
+		
+            while low <= high:
                 mid = (low + high) / 2
 		if i[mid] < target:
                     low = mid + 1
