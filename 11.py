@@ -9,7 +9,6 @@ class Solution:
         ugly2index = 0
         ugly3index = 0
         ugly5index = 0
-        
         while ugly_number_count < index:
             ugly_number_list.append(min(ugly_number_list[ugly2index] * 2,
                                         ugly_number_list[ugly3index] * 3,
@@ -22,7 +21,6 @@ class Solution:
                 ugly3index += 1
             while ugly_number_list[ugly5index] * 5 <= last_number:
                 ugly5index += 1
-                
             ugly_number_count += 1
         
         return ugly_number_list[len(ugly_number_list)-1]
