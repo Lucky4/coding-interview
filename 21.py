@@ -4,7 +4,7 @@ from __future__ import division
 
 class Solution:
     def Power(self, base, exponent):
-	if base == 0:
+        if base == 0:
 	    return False
         if exponent == 0:
 	    return 1
