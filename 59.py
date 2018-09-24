@@ -25,14 +25,11 @@ class Solution(object):
                     h = m - 1
                 else:
                     l = m + 1
-                continue
-                    
-            if nums[m] < nums[l] or nums[m] < nums[h]:
+            elif nums[m] < nums[l] or nums[m] < nums[h]:
                 if target <= nums[h] and target > nums[m]:
                     l = m + 1
                 else:
                     h = m - 1
-                continue
                     
             h -= 1
             
