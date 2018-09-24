@@ -1,14 +1,11 @@
 # -*- coding: utf-8 -*-
 class Solution:
     def StrToInt(self, s):
-        str_length = len(s)
-        if str_length == 0:
+        if len(s) == 0:
             return 0
         
         is_minus = False
         index = 0
-        num = 0
-        
         if s[0] == '+':
             is_minus = False
             index = 1
@@ -19,6 +16,7 @@ class Solution:
             is_minus = False
             index = 0
         
+        num = 0
         for i in range(index, str_length):
             if '0' < s[i] < '9':
                 try:
