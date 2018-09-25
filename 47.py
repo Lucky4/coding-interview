@@ -27,6 +27,6 @@ class Solution2(object):
             return pHead
         
         new_head = self.ReverseList(pHead.next)
-        pHead.next.next = head
+        pHead.next.next = pHhead
         pHead.next = None
         return new_head
