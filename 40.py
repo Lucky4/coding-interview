@@ -5,7 +5,6 @@ class Solution(object):
         for i in range(2, n+1):
             for j in range(1, i):
                 state[i] = max(state[i], max(j * (i-j), j * state[i-j]))
-                print state
         return state[n]
 
 
