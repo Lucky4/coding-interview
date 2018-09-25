@@ -7,6 +7,7 @@ class Solution(object):
         """
         if not word1 and not word2:
             return 0
+        
         num_word1 = len(word1)
         num_word2 = len(word2)
         dp = [[0] * (num_word2+1) for i in range(num_word1+1)]
@@ -16,4 +17,5 @@ class Solution(object):
                     dp[i][j] = dp[i-1][j-1] + 1
                 else:
                     dp[i][j] = max(dp[i-1][j], dp[i][j-1])
+                    
         return num_word1 + num_word2 - 2 * dp[num_word1][num_word2]
