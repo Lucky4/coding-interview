@@ -17,7 +17,7 @@ class Solution:
             path.append(root.val)
             
             if root.left == None and root.right == None:
-                if reduce(lambda x, y : x + y, path) == expectNumber:
+                if sum(path) == expectNumber:
                     res.append(path[:])
 
             if root.left != None:
