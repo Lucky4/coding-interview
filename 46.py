@@ -7,6 +7,7 @@ class Solution:
     def EntryNodeOfLoop(self, pHead):
         if pHead==None or pHead.next==None or pHead.next.next==None:
             return None
+        
         low=pHead.next
         fast=pHead.next.next
         while low!=fast: # 这里是关键，判断链表中是否有环
@@ -14,11 +15,10 @@ class Solution:
                 return None
             low=low.next
             fast=fast.next.next
+            
         fast=pHead
         while low!=fast:
             low=low.next
             fast=fast.next
+            
         return fast
-
-
-# 思路见牛客答案。
