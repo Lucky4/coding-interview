@@ -1,19 +1,17 @@
 # -*- coding: utf-8 -*-
 class Solution(object):
     def Palindromic(selfs, s):
-        s = list(s)
-
         if len(s) == 0:
             return 0
 
+        count = 1
+        s = list(s)
         pre_list = []
         pre_list.append(1)
-        count = 1
 
         for i in range(1, len(s)):
             curr_list = []
             curr_list.append(1)
-
             if s[i] == s[i - 1]:
                 curr_list.append(2)
 
