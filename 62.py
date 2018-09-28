@@ -27,6 +27,23 @@ class Solution:
 
             path.pop()
 
+    def helper2(self, root, expectNumber, res, path):
+        '''
+        路径的重点不一定是叶子节点。
+        '''
+        if root != None:
+            path.append(root.val)
+            
+            if sum(path) == expectNumber:
+                res.append(path[:])
+
+            if root.left != None and sum(path) < expectNumber:
+                self.helper(root.left, expectNumber, res, path)
+            if root.right != None and sum(path) < expectNumber:
+                self.helper(root.right, expectNumber, res, path)
+
+            path.pop()
+  
 
 T = TreeNode(10)
 T.left = TreeNode(5)
