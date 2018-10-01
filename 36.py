@@ -1,25 +1,20 @@
 # -*- coding:utf-8 -*-
 class Solution:
-    def func(self, ss):
+    def func(self, ss, m, target):
         res = []
-        subset = []
-        for i in  range(len(ss)):
-            self.Combination(ss, i, subset, res)
+        subset = [0] * 20
+        self.combination(ss, len(ss), m, target, subset, res)
         return res
 
-    def Combination(self, ss, number, subset, res):
-        if number == 0:
-            res.append(''.join(subset))
-            return None
-
-        if len(ss) == 0:
-            return None
-        
-        subset.append(ss[0])
-        self.Combination(ss[1:], number-1, subset, res)
-        subset.pop()
-
-        self.Combination(ss[1:], number, subset, res)
+    def combination(self, ss, n, m, target, subset, res):
+        for i in range(n, m-1, -1):
+            subset[m] = i
+            if m > 1:
+                self.combination(ss, i-1, m-1, target, subset, res)
+            else:
+                if ss[subset[1]-1] + ss[subset[2]-1] + ss[subset[3]-1] == target:
+                    res.append(subset[1:4])
 
 
-print Solution().func('abcdefg')
+print sorted(Solution().func([10, 20, 30, 40, 50, 60, 70, 80, 90, 100], 3, 150))
+
