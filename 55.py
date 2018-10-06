@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
@@ -18,6 +19,9 @@ class Solution(object):
 
     # 这里的递归很难理解，记住，递归是一条一条路线走的
     def getNodePath(self, root, node, path):
+        if root == None:
+            return None
+
         found = False
         path.append(root)
 
@@ -32,6 +36,7 @@ class Solution(object):
 
         if not found:
             path.pop()
+
         return found
 
 
@@ -74,7 +79,7 @@ if __name__ == '__main__':
 
     s = Solution()
     s.getNodePath(a, a, path1)
-    s.getNodePath(a, e, path2)
+    s.getNodePath(a, h, path2)
 
     common_node = s.getCommonNode(path1, path2)
     common_node_distance = path1.index(common_node) + 1
