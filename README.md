@@ -74,3 +74,4 @@
 |69|[求素数]() | [Python](./69.py)
 |70|[(动态规划)最长回文子串](https://leetcode.com/problems/longest-palindromic-substring/solution/) | [Python](./70.py)
 |71|[n个数和为m]() | [Python](./71.py)
+|71|[判断一个整数是否是回文数](https://leetcode.com/problems/palindrome-number/description/) | [Python](./72.py)
