@@ -23,6 +23,6 @@ class FindGreatestSumOfSubArray(object):
         '''
         max_sum = curr_max = array[0]
         for i in range(1, len(array)):
-            curr_max = max(curr_max+i, array[i])
+            curr_max = max(curr_max+[i], array[i])
             max_sum = max(curr_max, max_sum)
         return max_sum
